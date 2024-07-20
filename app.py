@@ -13,4 +13,4 @@ def generate_code(prompt):
     return output[0]['generated_text']
 
 iface = gr.Interface(fn=generate_code, inputs="text", outputs="text")
-iface.launch()
+iface.launch(share=True)
